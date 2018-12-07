@@ -7,45 +7,50 @@
 
 List::List()
 :
-m_head(nullptr)
+m_Head(nullptr)
 {
 }
 
 List::~List()
 {
-    Node *node = m_head;
+    Node *node = m_Head;
     while (node != nullptr)
     {
         Node *tmp = node;
-        node = node->m_next;
+        node = node->m_Next;
         delete(tmp);
     }
 }
 
 void List::PushToTail(int value)
 {
-    if (m_head == nullptr)
+    if (m_Head == nullptr)
     {
-        m_head = new Node(value);
+        m_Head = new Node(value);
     }
     else
     {
-        Node *node = m_head;
-        while (node->m_next)
+        Node *node = m_Head;
+        while (node->m_Next)
         {
-            node = node->m_next;
+            node = node->m_Next;
         }
         Node* new_node = new Node(value);
-        node->m_next = new_node;
+        node->m_Next = new_node;
     }
 }
 
-void List::Push(int value)
+void List::Push(int value, int weight)
 {
+    if (weight < 0)
+    {
+        std::cout << "Incorrect weight value" << std::endl;
+    }
     if (Node *node = new Node(value))
     {
-        node->m_next = m_head;
-        m_head = node;
+        node->m_Next = m_Head;
+        node->m_Weight = weight;
+        m_Head = node;
     }
     else
     {
@@ -53,47 +58,47 @@ void List::Push(int value)
     }
 }
 
-void List::PushUniq(int value)
+void List::PushUniq(int value, int weight)
 {
-    Node *node = m_head;
+    Node *node = m_Head;
     while (node != nullptr)
     {
-        if (node->m_value == value)
+        if (node->m_Value == value)
         {
             std::cout << "Non Unique value" << std::endl;
             return;
         }
-        node = node->m_next;
+        node = node->m_Next;
     }
-    Push(value);
+    Push(value, weight);
 }
 
 int List::Pop()
 {
-    if (m_head)
+    if (m_Head)
     {
-        Node *node = m_head->m_next;
-        int value = m_head->m_value;
-        delete( m_head );
-        m_head = node;
+        Node *node = m_Head->m_Next;
+        int value = m_Head->m_Value;
+        delete m_Head;
+        m_Head = node;
         return value;
     }
 }
 
 void List::Print()
 {
-    Node *node = m_head;
+    Node *node = m_Head;
     while (node != nullptr)
     {
-        std::cout << node->m_value << " ";
-        node = node->m_next;
+        std::cout << node->m_Value << " ";
+        node = node->m_Next;
     }
     std::cout << std::endl;
 }
 
 bool List::IsEmpty()
 {
-    if (m_head != nullptr)
+    if (m_Head != nullptr)
     {
         return false;
     }

@@ -2,45 +2,33 @@
 
 #include "Graph.h"
 
-#define VERTEX_NUMBER 6
+#define VERTEX_NUMBER 5
 
 int main()
 {
     Graph* graph = new Graph(VERTEX_NUMBER);
-    /*graph->AddEdge(0, 5);
-    graph->AddEdge(1, 5);
-    graph->AddEdge(2, 5);
-    graph->AddEdge(3, 5);
-    graph->AddEdge(4, 5);
-    graph->AddEdge(5, 5);
-    graph->AddEdge(6, 5);
-    graph->AddEdge(7, 5);
-    graph->AddEdge(8, 5);
-    graph->AddEdge(9, 5);
 
-    graph->AddEdge(1, 2);
-    graph->AddEdge(2, 3);
-    graph->AddEdge(3, 4);
-    graph->AddEdge(4, 5);
-    graph->AddEdge(0, 6);
-    graph->AddEdge(0, 1);*/
-
-    graph->AddEdge(0, 1);
-    graph->AddEdge(0, 2);
-    graph->AddEdge(0, 3);
-    graph->AddEdge(1, 2);
-    graph->AddEdge(1, 3);
-    graph->AddEdge(2, 3);
-    graph->AddEdge(3, 4);
-    graph->AddEdge(4, 1);
-    graph->AddEdge(4, 0);
-    graph->AddEdge(4, 5);
+    graph->AddEdge(0, 1, 10);
+    graph->AddEdge(0, 2, 30),
+    graph->AddEdge(0, 3, 5);
+    graph->AddEdge(2, 4, 10);
+    graph->AddEdge(3, 2, 20);
+    graph->AddEdge(3, 1, 40);
+    graph->AddEdge(3, 4, 2);
+    graph->AddEdge(4, 2, 10);
+    graph->AddEdge(4, 3, 30);
     graph->Print();
 
-    graph->DepthFirstSearch(0, 5);
+    graph->Dijkstra(0);
+    graph->PrintMark();
     graph->SetVertexVisitedFalse();
 
-    graph->BreadthFirstSearch(0, 5);
+    graph->DepthFirstSearch(0, 4);
+    graph->PrintWay();
+    graph->SetVertexVisitedFalse();
+
+    graph->BreadthFirstSearch(0, 4);
+    graph->PrintWay();
     graph->SetVertexVisitedFalse();
 
     delete graph;

@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/dbogdano/CLionProjects/Graph/Graph.cpp
+/home/dima/CLionProjects/Graph/Graph.cpp
 iostream
 -
+limits.h
+/home/dima/CLionProjects/Graph/limits.h
 Graph.h
-C:/Users/dbogdano/CLionProjects/Graph/Graph.h
+/home/dima/CLionProjects/Graph/Graph.h
 
-C:/Users/dbogdano/CLionProjects/Graph/Graph.h
+/home/dima/CLionProjects/Graph/Graph.h
 List.h
-C:/Users/dbogdano/CLionProjects/Graph/List.h
+/home/dima/CLionProjects/Graph/List.h
 
-C:/Users/dbogdano/CLionProjects/Graph/List.h
+/home/dima/CLionProjects/Graph/List.h
 Node.h
-C:/Users/dbogdano/CLionProjects/Graph/Node.h
+/home/dima/CLionProjects/Graph/Node.h
 
-C:/Users/dbogdano/CLionProjects/Graph/Node.h
+/home/dima/CLionProjects/Graph/Node.h
 

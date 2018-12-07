@@ -6,8 +6,9 @@
 
 Node::Node(int value, int weight)
 :
-m_value(value),
-m_weight(weight),
-m_next(nullptr)
+m_Value(value),
+m_Weight(weight),
+m_Parent(-1),
+m_Next(nullptr)
 {
 }

@@ -10,9 +10,11 @@ class Node {
 public:
     Node(int value, int m_weight = 0);
 public:
-    int m_value;
-    int m_weight;
-    Node *m_next;
+    int m_Value;
+    int m_Weight;
+    //variables for BFS
+    int m_Parent;
+    Node *m_Next;
 
 };
 

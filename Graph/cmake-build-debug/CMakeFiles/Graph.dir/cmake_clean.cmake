@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Graph.dir/main.cpp.obj"
-  "CMakeFiles/Graph.dir/Graph.cpp.obj"
-  "CMakeFiles/Graph.dir/Node.cpp.obj"
-  "CMakeFiles/Graph.dir/List.cpp.obj"
+  "CMakeFiles/Graph.dir/Graph.cpp.o"
+  "CMakeFiles/Graph.dir/List.cpp.o"
+  "CMakeFiles/Graph.dir/main.cpp.o"
+  "CMakeFiles/Graph.dir/Node.cpp.o"
   "Graph.pdb"
-  "Graph.exe"
-  "Graph.exe.manifest"
-  "libGraph.dll.a"
+  "Graph"
 )
 
 # Per-language clean rules from dependency scanning.

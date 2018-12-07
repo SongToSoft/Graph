@@ -13,14 +13,14 @@ public:
     List();
     ~List();
     void PushToTail(int value);
-    void Push(int value);
-    void PushUniq(int value);
+    void Push(int value, int weight = 0);
+    void PushUniq(int value, int weight = 0);
     int Pop();
     void Print();
     bool IsEmpty();
 
 public:
-    Node *m_head;
+    Node *m_Head;
 };
 
 

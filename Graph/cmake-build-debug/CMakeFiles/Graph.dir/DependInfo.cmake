@@ -4,15 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/dbogdano/CLionProjects/Graph/Graph.cpp" "C:/Users/dbogdano/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/Graph.cpp.obj"
-  "C:/Users/dbogdano/CLionProjects/Graph/List.cpp" "C:/Users/dbogdano/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/List.cpp.obj"
-  "C:/Users/dbogdano/CLionProjects/Graph/Node.cpp" "C:/Users/dbogdano/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/Node.cpp.obj"
-  "C:/Users/dbogdano/CLionProjects/Graph/main.cpp" "C:/Users/dbogdano/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/main.cpp.obj"
+  "/home/dima/CLionProjects/Graph/Graph.cpp" "/home/dima/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/Graph.cpp.o"
+  "/home/dima/CLionProjects/Graph/List.cpp" "/home/dima/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/List.cpp.o"
+  "/home/dima/CLionProjects/Graph/Node.cpp" "/home/dima/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/Node.cpp.o"
+  "/home/dima/CLionProjects/Graph/main.cpp" "/home/dima/CLionProjects/Graph/cmake-build-debug/CMakeFiles/Graph.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../."
   )
 
 # Targets to which this target links.
